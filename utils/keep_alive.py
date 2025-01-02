@@ -8,13 +8,6 @@ app = Flask('')
 def home():
     return "I'm alive!"  # Текст, который будет виден при доступе к серверу
 
-# @app.route('/webhook', methods=['POST'])
-# def webhook():
-#     # Получаем обновление Telegram
-#     json_data = request.get_json(force=True)
-#     app.bot.process_update(json_data)
-#     return 'OK', 200
-
 # Функция для запуска Flask-сервера
 def run():
     app.run(host='0.0.0.0', port=8080)
@@ -23,6 +16,13 @@ def run():
 def keep_alive():
     t = Thread(target=run)
     t.start()
+
+# @app.route('/webhook', methods=['POST'])
+# def webhook():
+#     # Получаем обновление Telegram
+#     json_data = request.get_json(force=True)
+#     app.bot.process_update(json_data)
+#     return 'OK', 200
 
 # # Функция для регистрации вебхука
 # def register_webhook(app):

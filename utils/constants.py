@@ -3,13 +3,14 @@ AVAILABLE_LANGUAGES = {"ru": "Русский",
                        "en": "English",
                        "de": "Deutsch",
                        "es": "Español"}
-CATEGORIES = ["business",
-              "entertainment",
-              "general",
-              "health",
-              "science",
-              "sports",
-              "technology",
+CATEGORIES = [
+              # "business",
+              # "entertainment",
+              # "general",
+              # "health",
+              # "science",
+              # "sports",
+              # "technology",
               "jikan_anime",
               "animechan"]
 
